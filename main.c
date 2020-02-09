@@ -1,35 +1,39 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+//Operadores de incremento y decremento
 int main()
 {
-    printf("Operadores de asignacion: \n \n");
+    printf("Operadores de incremento y decremento: \n \n");
 
-    int value;
+    int value, res;
 
-    value = 11;
+    value = 25;
 
-    printf("El valor de nuestra variable es: %i \n", value);
+    res = value++;
 
-    value += 1;
+    printf("Resultado: %i \n", res);
+    printf("Value: %i \n", value);
 
-    printf("El valor de nuestra variable es: %i \n", value);
+    value = 25;
 
-    value -= 2;
+    res = ++value;
 
-    printf("El valor de nuestra variable es: %i \n", value);
+    printf("Resultado: %i \n", res);
+    printf("Value: %i \n", value);
 
-    value *= 5;
+    value = 25;
 
-    printf("El valor de nuestra variable es: %i \n", value);
+    res = value--;
 
-    value /= 4;
+    printf("Resultado: %i \n", res);
+    printf("Value: %i \n", value);
 
-    printf("El valor de nuestra variable es: %i \n", value);
+    value = 25;
 
-    value %= 6;
+    res = --value;
 
-    printf("El valor de nuestra variable es: %i \n", value);
+    printf("Resultado: %i \n", res);
+    printf("Value: %i \n", value);
 
     return 0;
 }
