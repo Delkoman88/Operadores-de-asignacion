@@ -1,39 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
-//Operadores de incremento y decremento
+
 int main()
 {
-    printf("Operadores de incremento y decremento: \n \n");
+    printf("Reto 1: \n \n");
 
-    int value, res;
+    int x;
 
-    value = 25;
+    x = 10;
 
-    res = value++;
+    x += 2*x;
 
-    printf("Resultado: %i \n", res);
-    printf("Value: %i \n", value);
 
-    value = 25;
-
-    res = ++value;
-
-    printf("Resultado: %i \n", res);
-    printf("Value: %i \n", value);
-
-    value = 25;
-
-    res = value--;
-
-    printf("Resultado: %i \n", res);
-    printf("Value: %i \n", value);
-
-    value = 25;
-
-    res = --value;
-
-    printf("Resultado: %i \n", res);
-    printf("Value: %i \n", value);
+    printf("Resultado: %i \n", x);
 
     return 0;
 }
