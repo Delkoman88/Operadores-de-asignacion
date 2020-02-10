@@ -1,39 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
-//Operadores de incremento y decremento
+
 int main()
 {
-    printf("Operadores de incremento y decremento: \n \n");
+    printf("Reto 2: \n \n");
 
-    int value, res;
+    int x;
 
-    value = 25;
+    printf("Ingresa un numero entero: ");
+    scanf("%i", &x);
 
-    res = value++;
+    x %= 5;
 
-    printf("Resultado: %i \n", res);
-    printf("Value: %i \n", value);
+    printf("\n Resultado del modulo del valor ingresado usando 5 y sumando 1 con operadores de asignacion: %i \n", ++x);
 
-    value = 25;
-
-    res = ++value;
-
-    printf("Resultado: %i \n", res);
-    printf("Value: %i \n", value);
-
-    value = 25;
-
-    res = value--;
-
-    printf("Resultado: %i \n", res);
-    printf("Value: %i \n", value);
-
-    value = 25;
-
-    res = --value;
-
-    printf("Resultado: %i \n", res);
-    printf("Value: %i \n", value);
 
     return 0;
 }
